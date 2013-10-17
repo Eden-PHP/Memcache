@@ -1,0 +1,22 @@
+{
+    "name": "eden/memcache",
+    "type": "library",
+    "description": "Eden cURL component",
+    "keywords": ["eden", "library"],
+    "homepage": "http://eden-php.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rolando Sherlon C. Villanueva",
+            "email": "sherlon_v@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1",
+		"eden/core": "1.*"
+    },
+    "autoload": {
+         "psr-0": { "Eden\\Memcache": "" }
+    },
+	"target-dir": "Eden/Memcache"
+}
