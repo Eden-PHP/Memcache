@@ -32,9 +32,9 @@ class Base extends CoreBase
 	/**
 	* Constructs the base class
 	*
-	* @param string
-	* @param int
-	* @param int
+	* @param string | null
+	* @param int | null
+	* @param int | null
 	* @return Eden\Memcache\Base
 	*/
 	public function __construct($host = 'localhost', $port = 11211, $timeout = 1)
@@ -82,12 +82,12 @@ class Base extends CoreBase
 	/**
 	 * Add a memcached server to connection pool
 	 *
-	 * @param string
-	 * @param int
-	 * @param bool
-	 * @param int
-	 * @param int
-	 * @return bool
+	 * @param string | null
+	 * @param int | null
+	 * @param bool | null
+	 * @param int | null
+	 * @param int | null
+	 * @return bool | null
 	 */
 	public function addServer($host = 'localhost', $port = 11211, $persistent = true, $weight = null, $timeout = 1)
 	{
@@ -124,8 +124,8 @@ class Base extends CoreBase
 	/**
 	 * Gets a data cache
 	 *
-	 * @param string|array the key to the data
-	 * @param int MemCache flag
+	 * @param string | array the key to the data
+	 * @param int | null MemCache flag
 	 * @return variable
 	 */
 	public function get($key, $flag = null)
@@ -161,8 +161,8 @@ class Base extends CoreBase
 	 *
 	 * @param string the key to the data
 	 * @param variable the data to be cached
-	 * @param int MemCache flag
-	 * @param int expire 
+	 * @param int | null MemCache flag
+	 * @param int | null expire 
 	 * @return bool
 	 */
 	public function set($key, $data, $flag = null, $expire = null)
